@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SeyehatVeriGirisFormu</class>
+ <widget class="QWidget" name="SeyehatVeriGirisFormu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>456</width>
+    <height>314</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton#btnKaydet {
+	qproperty-icon: url(:/Resimler/Kaydet.png);
+	qproperty-iconSize: 16px 16px;
+   qproperty-text: &quot;&amp;Kaydet&quot;;
+   qproperty-default: true;
+}
+
+QPushButton#btnIptal {
+	qproperty-icon: url(:/Resimler/Iptal.png);
+	qproperty-iconSize: 16px 16px;
+   qproperty-text: &quot;İ&amp;ptal&quot;;
+}
+
+QLabel {
+	font: 700 12pt &quot;Roboto&quot;;
+}
+
+QLabel#lblBaslik {
+	font: 700 italic 18pt &quot;Roboto&quot;;
+}
+
+QLabel#lblSimge {
+	qproperty-maximumSize: 48px 48px;
+}
+
+QLineEdit {
+	font: 12pt &quot;Roboto&quot;;
+}
+QSpinBox {
+	font: 12pt &quot;Roboto&quot;;
+}
+
+QPlainTextEdit {
+	font: 12pt &quot;Roboto&quot;;
+}
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>4</number>
+     </property>
+     <property name="bottomMargin">
+      <number>50</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="lblSimge">
+       <property name="maximumSize">
+        <size>
+         <width>48</width>
+         <height>48</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="../../Kaynaklar.qrc">:/Resimler/Seyehat.png</pixmap>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lblBaslik">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Yeni Seyehat Bilgileri Girişi</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Preferred</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>30</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="lblSeyehatSaati">
+       <property name="text">
+        <string>Seyehat Saati</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QTimeEdit" name="teSeyehatSaati"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="lblSeyehatTarihi">
+       <property name="text">
+        <string>Seyehat Tarihi</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QDateEdit" name="deSeyehatTarihi"/>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="1">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="btnKaydet">
+       <property name="text">
+        <string>&amp;Kaydet</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../Kaynaklar.qrc">
+         <normaloff>:/Resimler/Kaydet.png</normaloff>:/Resimler/Kaydet.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnIptal">
+       <property name="text">
+        <string>İ&amp;ptal</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/Resimler/IptalEt</normaloff>:/Resimler/IptalEt</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../Kaynaklar.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btnIptal</sender>
+   <signal>clicked()</signal>
+   <receiver>SeyehatVeriGirisFormu</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>421</x>
+     <y>259</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>449</x>
+     <y>157</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OtobusGirisFormu</class>
+ <widget class="QWidget" name="OtobusGirisFormu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>477</width>
+    <height>375</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton#btnKaydet {
+	qproperty-icon: url(:/Resimler/Kaydet.png);
+	qproperty-iconSize: 16px 16px;
+   qproperty-text: &quot;&amp;Kaydet&quot;;
+   qproperty-default: true;
+}
+
+QPushButton#btnIptal {
+	qproperty-icon: url(:/Resimler/Iptal.png);
+	qproperty-iconSize: 16px 16px;
+   qproperty-text: &quot;İ&amp;ptal&quot;;
+}
+
+QLabel {
+	font: 700 12pt &quot;Roboto&quot;;
+}
+
+QLabel#lblBaslik {
+	font: 700 italic 18pt &quot;Roboto&quot;;
+}
+
+QLabel#lblSimge {
+	qproperty-maximumSize: 48px 48px;
+}
+
+QLineEdit {
+	font: 12pt &quot;Roboto&quot;;
+}
+QSpinBox {
+	font: 12pt &quot;Roboto&quot;;
+}
+
+QPlainTextEdit {
+	font: 12pt &quot;Roboto&quot;;
+}
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="lblSimge">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="../../Kaynaklar.qrc">:/Resimler/Otobus.png</pixmap>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lblBaslik">
+       <property name="text">
+        <string>Yeni Otobüs Gİrişi</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="lblModel">
+         <property name="text">
+          <string>Model</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="leModel"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="lblKapasite">
+         <property name="text">
+          <string>Kapasite</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QSpinBox" name="spnKapasite">
+         <property name="styleSheet">
+          <string notr="true">font: 900 9pt &quot;Segoe UI Black&quot;;
+font: 9pt &quot;Segoe UI&quot;;
+</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+         <property name="specialValueText">
+          <string>Kişi Cinsinden</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="lblRenk">
+         <property name="text">
+          <string>Renk</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="leRenk"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="lblBoyut">
+         <property name="text">
+          <string>Boyut</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="leBoyut"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="lblOturmaDuzeni">
+         <property name="text">
+          <string>Oturma Düzeni</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="lblPlaka">
+         <property name="text">
+          <string>Plaka</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="lePlaka"/>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="leOturmaDuzeni">
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string>2+1,2+2 veya 1+1</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="btnKaydet">
+         <property name="text">
+          <string>&amp;Kaydet</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnIptal">
+         <property name="text">
+          <string>İ&amp;ptal</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>:/Resimler/IptalEt</normaloff>:/Resimler/IptalEt</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../Kaynaklar.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btnIptal</sender>
+   <signal>clicked()</signal>
+   <receiver>OtobusGirisFormu</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>413</x>
+     <y>112</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>473</x>
+     <y>70</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

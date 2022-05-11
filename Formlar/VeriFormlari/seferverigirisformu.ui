@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SeferVeriGirisFormu</class>
+ <widget class="QWidget" name="SeferVeriGirisFormu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>560</width>
+    <height>334</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton#btnKaydet {
+	qproperty-icon: url(:/Resimler/Kaydet.png);
+	qproperty-iconSize: 16px 16px;
+   qproperty-text: &quot;&amp;Kaydet&quot;;
+   qproperty-default: true;
+}
+
+QPushButton#btnIptal {
+	qproperty-icon: url(:/Resimler/Iptal.png);
+	qproperty-iconSize: 16px 16px;
+   qproperty-text: &quot;İ&amp;ptal&quot;;
+}
+
+QLabel {
+	font: 700 12pt &quot;Roboto&quot;;
+}
+
+QLabel#lblBaslik {
+	font: 700 italic 18pt &quot;Roboto&quot;;
+}
+
+QLabel#lblSimge {
+	qproperty-maximumSize: 48px 48px;
+}
+
+QLineEdit {
+	font: 12pt &quot;Roboto&quot;;
+}
+QSpinBox {
+	font: 12pt &quot;Roboto&quot;;
+}
+
+QPlainTextEdit {
+	font: 12pt &quot;Roboto&quot;;
+}
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="2" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="lblSeferUzunluk">
+         <property name="text">
+          <string>Sefer Uzunluğu</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="lblBaslangicNoktasi">
+         <property name="text">
+          <string>Başlangıç Noktası</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="lblMesafe">
+         <property name="text">
+          <string>Mesafe (KM)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="lblVarisNoktasi">
+         <property name="text">
+          <string>Varış Noktası</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="leSeferUzunluk">
+         <property name="placeholderText">
+          <string>Saat Cinsinden</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QSpinBox" name="spnMesafe">
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+         <property name="specialValueText">
+          <string/>
+         </property>
+         <property name="minimum">
+          <number>0</number>
+         </property>
+         <property name="value">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="leBaslangicNoktasi"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QSpinBox" name="spnMolaSayisi">
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="wrapping">
+          <bool>false</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+         <property name="correctionMode">
+          <enum>QAbstractSpinBox::CorrectToNearestValue</enum>
+         </property>
+         <property name="minimum">
+          <number>0</number>
+         </property>
+         <property name="value">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="leVarisNoktasi"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="leMolaSayisi">
+         <property name="text">
+          <string>Mola Sayısı</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="btnKaydet">
+         <property name="text">
+          <string>&amp;Kaydet</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../../Kaynaklar.qrc">
+           <normaloff>:/Resimler/Kaydet.png</normaloff>:/Resimler/Kaydet.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnIptal">
+         <property name="text">
+          <string>İ&amp;ptal</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>:/Resimler/IptalEt</normaloff>:/Resimler/IptalEt</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="lblSimge">
+       <property name="maximumSize">
+        <size>
+         <width>48</width>
+         <height>48</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="../../Kaynaklar.qrc">:/Resimler/Sefer.png</pixmap>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lblBaslik">
+       <property name="text">
+        <string>Yeni Sefer Girişi</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../Kaynaklar.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btnIptal</sender>
+   <signal>clicked()</signal>
+   <receiver>SeferVeriGirisFormu</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>514</x>
+     <y>90</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>553</x>
+     <y>50</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

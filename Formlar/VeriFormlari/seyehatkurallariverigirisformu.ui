@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SeyehatKurallariVeriGirisFormu</class>
+ <widget class="QWidget" name="SeyehatKurallariVeriGirisFormu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>507</width>
+    <height>349</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton#btnKaydet {
+	qproperty-icon: url(:/Resimler/Kaydet.png);
+	qproperty-iconSize: 16px 16px;
+   qproperty-text: &quot;&amp;Kaydet&quot;;
+   qproperty-default: true;
+}
+
+QPushButton#btnIptal {
+	qproperty-icon: url(:/Resimler/Iptal.png);
+	qproperty-iconSize: 16px 16px;
+   qproperty-text: &quot;İ&amp;ptal&quot;;
+}
+
+QLabel {
+	font: 700 12pt &quot;Roboto&quot;;
+}
+
+QLabel#lblBaslik {
+	font: 700 italic 18pt &quot;Roboto&quot;;
+}
+
+QLabel#lblSimge {
+	qproperty-maximumSize: 48px 48px;
+}
+
+QLineEdit {
+	font: 12pt &quot;Roboto&quot;;
+}
+QSpinBox {
+	font: 12pt &quot;Roboto&quot;;
+}
+
+QPlainTextEdit {
+	font: 12pt &quot;Roboto&quot;;
+}
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="lblSimge">
+     <property name="maximumSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="../../Kaynaklar.qrc">:/Resimler/SeyehatKurallari.png</pixmap>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" colspan="2">
+    <widget class="QLabel" name="lblBaslik">
+     <property name="text">
+      <string>Yeni Seyehat Kuralı Girişi</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QLabel" name="lblKural">
+     <property name="text">
+      <string>Kural</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QPlainTextEdit" name="plnKural">
+     <property name="styleSheet">
+      <string notr="true">font: 700 10pt &quot;Segoe UI&quot;;
+font: 14pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="placeholderText">
+      <string>Lütfen Bİr Kural Giriniz...</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="btnKaydet">
+       <property name="text">
+        <string>&amp;Kaydet</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../Kaynaklar.qrc">
+         <normaloff>:/Resimler/Kaydet.png</normaloff>:/Resimler/Kaydet.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnIptal">
+       <property name="text">
+        <string>İ&amp;ptal</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/Resimler/IptalEt</normaloff>:/Resimler/IptalEt</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../Kaynaklar.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btnIptal</sender>
+   <signal>clicked()</signal>
+   <receiver>SeyehatKurallariVeriGirisFormu</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>469</x>
+     <y>105</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>508</x>
+     <y>194</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
