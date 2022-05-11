@@ -47,8 +47,8 @@ signals:
 
 private:
     Metin _SeferUzunluk;
-    Tamsayi _MolaSayisi;
-    Tamsayi _Mesafe;
+    Tamsayi _MolaSayisi = 0;
+    Tamsayi _Mesafe = 0;
     Metin _VarisNoktasi;
     Metin _BaslangicNoktasi;
     Tamsayi _OtobusID;

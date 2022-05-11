@@ -21,6 +21,7 @@ void SeferGirisIslemi::main()
     form->setWindowModality(Qt::ApplicationModal);
     form->setVeri(veri);
     form->show();
+
      /*
      * BURAYI SIGNAL İLE YAZINCA, KAYDET E BASINCA KAPANMIYOR!!!
      */

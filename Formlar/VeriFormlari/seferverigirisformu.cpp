@@ -5,7 +5,7 @@ SeferVeriGirisFormu::SeferVeriGirisFormu(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::SeferVeriGirisFormu)
 {
-    ui->setupUi(this);
+    ui->setupUi(this);    
     connect(ui->btnKaydet,SIGNAL(clicked()),this, SIGNAL(veriKaydet()));
 }
 
