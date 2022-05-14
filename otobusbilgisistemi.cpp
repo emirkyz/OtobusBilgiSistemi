@@ -2,15 +2,21 @@
 #include "ui_otobusbilgisistemi.h"
 #include <Islemler/islemdeposu.h>
 #include <Islemler/VeriGirisi/isletmegirisislemi.h>
+
 OtobusBilgiSistemi::OtobusBilgiSistemi(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::OtobusBilgiSistemi)
 {
+
+
     ui->setupUi(this);
     ui->menu_letme->addAction(IslemDeposu::fb().getAction(IslemDeposu::IslemIsletmeGiris));
     ui->toolBarVeriGiris->addAction(IslemDeposu::fb().getAction(IslemDeposu::IslemIsletmeGiris));
     // button a action eklenemez, bu yüzden toolbutton da dafault action değiştirilir!!!!
     ui->tbIsletme->setDefaultAction(IslemDeposu::fb().getAction(IslemDeposu::IslemIsletmeGiris));
+
+
+
 
     ui->menuOtobusler->addAction(IslemDeposu::fb().getAction(IslemDeposu::IslemOtobusGiris));
     ui->toolBarVeriGiris->addAction(IslemDeposu::fb().getAction(IslemDeposu::IslemOtobusGiris));
