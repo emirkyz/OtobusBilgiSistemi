@@ -9,6 +9,7 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    Formlar/ListeFormlari/isletmelistesi.cpp \
     Formlar/VeriFormlari/isletmeverigirisformu.cpp \
     Formlar/VeriFormlari/otobusgirisformu.cpp \
     Formlar/VeriFormlari/seferverigirisformu.cpp \
@@ -25,6 +26,7 @@ SOURCES += \
     Islemler/VeriGirisi/yolcugirisislemi.cpp \
     Islemler/islemdeposu.cpp \
     Islemler/tumkullaniciislemleri.cpp \
+    Veri/Ayarlar/ayarlar.cpp \
     Veri/VeriDepolari/biletdeposu.cpp \
     Veri/VeriDepolari/isletmedeposu.cpp \
     Veri/VeriDepolari/otobusdeposu.cpp \
@@ -48,6 +50,7 @@ SOURCES += \
     otobusbilgisistemi.cpp
 
 HEADERS += \
+    Formlar/ListeFormlari/isletmelistesi.h \
     Formlar/VeriFormlari/TemelVeriGirisi.h \
     Formlar/VeriFormlari/isletmeverigirisformu.h \
     Formlar/VeriFormlari/otobusgirisformu.h \
@@ -66,6 +69,7 @@ HEADERS += \
     Islemler/VeriGirisi/yolcugirisislemi.h \
     Islemler/islemdeposu.h \
     Islemler/tumkullaniciislemleri.h \
+    Veri/Ayarlar/ayarlar.h \
     Veri/Tanimlar.h \
     Veri/VeriDepolari/TemelVeriDeposu.h \
     Veri/VeriDepolari/biletdeposu.h \
@@ -90,6 +94,7 @@ HEADERS += \
     otobusbilgisistemi.h
 
 FORMS += \
+    Formlar/ListeFormlari/isletmelistesi.ui \
     Formlar/VeriFormlari/isletmeverigirisformu.ui \
     Formlar/VeriFormlari/otobusgirisformu.ui \
     Formlar/VeriFormlari/seferverigirisformu.ui \
