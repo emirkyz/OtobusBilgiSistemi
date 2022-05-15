@@ -10,7 +10,12 @@ public:
     explicit SeferDeposu(QObject *parent = nullptr);
 
 signals:
+private:
+    friend QDataStream &operator<<(QDataStream &stream, const SeferDeposu &veri);
+    friend QDataStream &operator>>(QDataStream &stream, SeferDeposu &veri);
 
 };
+QDataStream &operator<<(QDataStream &stream, const SeferDeposu &veri);
+QDataStream &operator>>(QDataStream &stream, SeferDeposu &veri);
 
 #endif // SEFERDEPOSU_H

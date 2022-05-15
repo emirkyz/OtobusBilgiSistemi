@@ -6,6 +6,7 @@ YolcuGirisFormu::YolcuGirisFormu(QWidget *parent) :
     ui(new Ui::YolcuGirisFormu)
 {
     ui->setupUi(this);
+    connect(ui->btnKaydet, SIGNAL(clicked()),this, SIGNAL(veriKaydet()));
 }
 
 YolcuGirisFormu::~YolcuGirisFormu()

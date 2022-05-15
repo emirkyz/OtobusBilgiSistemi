@@ -5,3 +5,13 @@ SeyehatDeposu::SeyehatDeposu(QObject *parent)
 {
 
 }
+QDataStream &operator<<(QDataStream &stream, const SeyehatDeposu &veri){
+    stream << veri._veriler;
+    stream << veri._sonId;
+    return stream;
+}
+QDataStream &operator>>(QDataStream &stream, SeyehatDeposu &veri){
+    stream >> veri._veriler;
+    stream >> veri._sonId;
+    return stream;
+}

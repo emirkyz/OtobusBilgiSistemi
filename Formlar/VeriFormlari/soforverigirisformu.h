@@ -23,6 +23,8 @@ private:
 public:
     void ekranGuncelle() override;
     void veriGuncelle() override;
+signals:
+    void veriKaydet();
 };
 
 #endif // SOFORVERIGIRISFORMU_H

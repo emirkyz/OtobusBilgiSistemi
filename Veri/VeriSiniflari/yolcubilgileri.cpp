@@ -33,3 +33,27 @@ void Yolcubilgileri::setBiletID(Tamsayi newBiletID)
     _BiletID = newBiletID;
     emit BiletIDChanged(_BiletID);
 }
+QDataStream &operator<<(QDataStream &stream, const Yolcubilgileri &veri){
+    stream << veri._Ad;
+    stream << veri._Soyad;
+    stream << veri._HesKodu;
+    stream << veri._TcKimlikNo;
+    stream << veri._Yas;
+    stream << veri._id;
+    stream << veri._silindiMi;
+    stream << veri._BiletID;
+    stream << veri._SeferID;
+    return stream;
+}
+QDataStream &operator>>(QDataStream &stream, Yolcubilgileri &veri){
+    stream >> veri._Ad;
+    stream >> veri._Soyad;
+    stream >> veri._HesKodu;
+    stream >> veri._TcKimlikNo;
+    stream >> veri._Yas;
+    stream >> veri._id;
+    stream >> veri._silindiMi;
+    stream >> veri._BiletID;
+    stream >> veri._SeferID;
+    return stream;
+}

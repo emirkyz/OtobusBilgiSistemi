@@ -762,5 +762,22 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
  <resources>
   <include location="../../Kaynaklar.qrc"/>
  </resources>
- <connections/>
+ <connections>
+  <connection>
+   <sender>btnIptal</sender>
+   <signal>clicked()</signal>
+   <receiver>YolcuGirisFormu</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>560</x>
+     <y>131</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>604</x>
+     <y>61</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

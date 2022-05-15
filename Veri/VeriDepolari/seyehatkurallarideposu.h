@@ -10,7 +10,12 @@ public:
     explicit SeyehatKurallariDeposu(QObject *parent = nullptr);
 
 signals:
+private:
+    friend QDataStream &operator<<(QDataStream &stream, const SeyehatKurallariDeposu &veri);
+    friend QDataStream &operator>>(QDataStream &stream, SeyehatKurallariDeposu &veri);
 
 };
+QDataStream &operator<<(QDataStream &stream, const SeyehatKurallariDeposu &veri);
+QDataStream &operator>>(QDataStream &stream, SeyehatKurallariDeposu &veri);
 
 #endif // SEYEHATKURALLARIDEPOSU_H

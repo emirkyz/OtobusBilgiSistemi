@@ -663,6 +663,9 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
          <property name="minimum">
           <number>0</number>
          </property>
+         <property name="maximum">
+          <number>100000</number>
+         </property>
          <property name="value">
           <number>0</number>
          </property>
@@ -687,6 +690,9 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
          </property>
          <property name="minimum">
           <number>0</number>
+         </property>
+         <property name="maximum">
+          <number>100000</number>
          </property>
          <property name="value">
           <number>0</number>

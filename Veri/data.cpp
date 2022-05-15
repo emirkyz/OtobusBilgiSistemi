@@ -53,22 +53,23 @@ QString Data::dosyaYolu()
 
 QDataStream &operator<<(QDataStream &stream, const Data &veri){
     stream << veri._isletmeler;
-/*    stream << veri._otobusler;
+    stream << veri._otobusler;
     stream << veri._seferler;
     stream << veri._kurallar;
     stream << veri._soforler;
     stream << veri._yolcular;
-    stream << veri._seyehatler; */
+    stream << veri._seyehatler;
     return stream;
 }
 QDataStream &operator>>(QDataStream &stream, Data &veri){
     stream >> veri._isletmeler;
-/*    stream >> veri._otobusler;
+    stream >> veri._otobusler;
     stream >> veri._seferler;
     stream >> veri._kurallar;
     stream >> veri._soforler;
     stream >> veri._yolcular;
-    stream >> veri._seyehatler; */
+    stream >> veri._seyehatler;
+
     return stream;
 }
 

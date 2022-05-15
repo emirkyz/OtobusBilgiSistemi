@@ -31,3 +31,17 @@ void Seyehatkurallari::setSeferID(Tamsayi newSeferID)
     _SeferID = newSeferID;
     emit SeferIDChanged(_SeferID);
 }
+QDataStream &operator<<(QDataStream &stream, const Seyehatkurallari &veri){
+    stream << veri._id;
+    stream << veri._silindiMi;
+    stream << veri._Kural;
+    stream << veri._SeferID;
+    return stream;
+}
+QDataStream &operator>>(QDataStream &stream, Seyehatkurallari &veri){
+    stream >> veri._id;
+    stream >> veri._silindiMi;
+    stream >> veri._Kural;
+    stream >> veri._SeferID;
+    return stream;
+}

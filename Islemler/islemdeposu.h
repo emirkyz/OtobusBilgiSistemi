@@ -12,7 +12,8 @@ public:
     static IslemDeposu &fb();
 
     typedef enum {IslemIsletmeGiris=0, IslemOtobusGiris,
-                   IslemSeferGiris, IslemKuralGiris, IslemSeyehatGiris} IslemSirasi;
+                   IslemSeferGiris, IslemKuralGiris, IslemSeyehatGiris,
+                   IslemSoforGiris, IslemYolcuGiris} IslemSirasi;
 
     //0 dan başlayarak yazdığın kelimeler typedef gibi sayılar verir
 

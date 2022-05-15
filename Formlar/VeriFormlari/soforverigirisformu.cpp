@@ -6,6 +6,7 @@ SoforVeriGirisFormu::SoforVeriGirisFormu(QWidget *parent) :
     ui(new Ui::SoforVeriGirisFormu)
 {
     ui->setupUi(this);
+    connect(ui->btnKaydet, SIGNAL(clicked()),this, SIGNAL(veriKaydet()));
 }
 
 SoforVeriGirisFormu::~SoforVeriGirisFormu()

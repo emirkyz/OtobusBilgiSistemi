@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>557</width>
-    <height>379</height>
+    <width>597</width>
+    <height>485</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -624,7 +624,7 @@ icon-align:center </string>
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>110</y>
+      <y>210</y>
       <width>151</width>
       <height>41</height>
      </rect>
@@ -656,7 +656,7 @@ icon-align:center </string>
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>160</y>
+      <y>260</y>
       <width>151</width>
       <height>41</height>
      </rect>
@@ -672,7 +672,7 @@ icon-align:center </string>
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>210</y>
+      <y>310</y>
       <width>151</width>
       <height>41</height>
      </rect>
@@ -684,13 +684,45 @@ icon-align:center </string>
      <enum>Qt::ToolButtonTextUnderIcon</enum>
     </property>
    </widget>
+   <widget class="QToolButton" name="tbSofor">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>110</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>sofor</string>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="tbYolcular">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>160</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>yolcular</string>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>557</width>
+     <width>597</width>
      <height>19</height>
     </rect>
    </property>
@@ -719,8 +751,20 @@ icon-align:center </string>
      <string>Seyehatler</string>
     </property>
    </widget>
+   <widget class="QMenu" name="menuSoforler">
+    <property name="title">
+     <string>Soforler</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuYolcular">
+    <property name="title">
+     <string>Yolcular</string>
+    </property>
+   </widget>
    <addaction name="menu_letme"/>
    <addaction name="menuOtobusler"/>
+   <addaction name="menuSoforler"/>
+   <addaction name="menuYolcular"/>
    <addaction name="menuSeferler"/>
    <addaction name="menuSeyehat_Kurallar"/>
    <addaction name="menuSeyehatler"/>

@@ -36,7 +36,11 @@ private:
     Tamsayi _SeferId;
     Tamsayi _OtobusId;
     Saat _SeyehatSaati;
+    friend QDataStream &operator<<(QDataStream &stream, const Seyehatbilgileri &veri);
+    friend QDataStream &operator>>(QDataStream &stream, Seyehatbilgileri &veri);
 
 };
+QDataStream &operator<<(QDataStream &stream, const Seyehatbilgileri &veri);
+QDataStream &operator>>(QDataStream &stream, Seyehatbilgileri &veri);
 
 #endif // SEYEHATBILGILERI_H

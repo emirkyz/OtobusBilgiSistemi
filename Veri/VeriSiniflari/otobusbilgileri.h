@@ -62,7 +62,11 @@ private:
     Metin _Plaka;
     Tamsayi _SoforID;
     Tamsayi _SeferID;
+    friend QDataStream &operator<<(QDataStream &stream, const OtobusBilgileri &veri);
+    friend QDataStream &operator>>(QDataStream &stream, OtobusBilgileri &veri);
 
 };
+QDataStream &operator<<(QDataStream &stream, const OtobusBilgileri &veri);
+QDataStream &operator>>(QDataStream &stream, OtobusBilgileri &veri);
 
 #endif // OTOBUSBILGILERI_H

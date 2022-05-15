@@ -27,8 +27,12 @@ signals:
 private:
     Metin _Kural;
     Tamsayi _SeferID;
+    friend QDataStream &operator<<(QDataStream &stream, const Seyehatkurallari &veri);
+    friend QDataStream &operator>>(QDataStream &stream, Seyehatkurallari &veri);
 
     };
+QDataStream &operator<<(QDataStream &stream, const Seyehatkurallari &veri);
+QDataStream &operator>>(QDataStream &stream, Seyehatkurallari &veri);
 
 
 #endif // SEYEHATKURALLARI_H

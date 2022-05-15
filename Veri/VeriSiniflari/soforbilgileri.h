@@ -53,8 +53,12 @@ private:
     Tamsayi _IsletmeID;
     Tamsayi _SeferID;
 
+    friend QDataStream &operator<<(QDataStream &stream, const Soforbilgileri &veri);
+    friend QDataStream &operator>>(QDataStream &stream, Soforbilgileri &veri);
 
 
 };
+QDataStream &operator<<(QDataStream &stream, const Soforbilgileri &veri);
+QDataStream &operator>>(QDataStream &stream, Soforbilgileri &veri);
 
 #endif // SOFORBILGILERI_H

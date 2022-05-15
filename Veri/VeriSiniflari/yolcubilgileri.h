@@ -29,7 +29,11 @@ signals:
 private:
     Tamsayi _BiletID;
     Tamsayi _SeferID;
+    friend QDataStream &operator<<(QDataStream &stream, const Yolcubilgileri &veri);
+    friend QDataStream &operator>>(QDataStream &stream, Yolcubilgileri &veri);
 
 };
+QDataStream &operator<<(QDataStream &stream, const Yolcubilgileri &veri);
+QDataStream &operator>>(QDataStream &stream, Yolcubilgileri &veri);
 
 #endif // YOLCUBILGILERI_H

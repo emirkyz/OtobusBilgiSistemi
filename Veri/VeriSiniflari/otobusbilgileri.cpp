@@ -109,3 +109,29 @@ void OtobusBilgileri::setSeferID(Tamsayi newSeferID)
     _SeferID = newSeferID;
     emit SeferIDChanged(_SeferID);
 }
+QDataStream &operator<<(QDataStream &stream, const OtobusBilgileri &veri){
+    stream << veri._id;
+    stream << veri._silindiMi;
+    stream << veri._Boyut;
+    stream << veri._Model;
+    stream << veri._Kapasite;
+    stream << veri._OturmaDuzeni;
+    stream << veri._Plaka;
+    stream << veri._Renk;
+    stream << veri._SeferID;
+    stream << veri._SoforID;
+    return stream;
+}
+QDataStream &operator>>(QDataStream &stream, OtobusBilgileri &veri){
+    stream >> veri._id;
+    stream >> veri._silindiMi;
+    stream >> veri._Boyut;
+    stream >> veri._Model;
+    stream >> veri._Kapasite;
+    stream >> veri._OturmaDuzeni;
+    stream >> veri._Plaka;
+    stream >> veri._Renk;
+    stream >> veri._SeferID;
+    stream >> veri._SoforID;
+    return stream;
+}

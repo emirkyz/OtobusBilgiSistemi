@@ -83,3 +83,35 @@ void Soforbilgileri::setSeferID(Tamsayi newSeferID)
     _SeferID = newSeferID;
     emit SeferIDChanged(_SeferID);
 }
+QDataStream &operator<<(QDataStream &stream, const Soforbilgileri &veri){
+    stream << veri._Ad;
+    stream << veri._Soyad;
+    stream << veri._HesKodu;
+    stream << veri._TcKimlikNo;
+    stream << veri._Yas;
+    stream << veri._id;
+    stream << veri._silindiMi;
+    stream << veri._EhliyetSinifi;
+    stream << veri._OtobusPlakasi;
+    stream << veri._TecrubeSuresi;
+    stream << veri._SeferID;
+    stream << veri._IsletmeID;
+    stream << veri._OtobusID;
+    return stream;
+}
+QDataStream &operator>>(QDataStream &stream, Soforbilgileri &veri){
+    stream >> veri._Ad;
+    stream >> veri._Soyad;
+    stream >> veri._HesKodu;
+    stream >> veri._TcKimlikNo;
+    stream >> veri._Yas;
+    stream >> veri._id;
+    stream >> veri._silindiMi;
+    stream >> veri._EhliyetSinifi;
+    stream >> veri._OtobusPlakasi;
+    stream >> veri._TecrubeSuresi;
+    stream >> veri._SeferID;
+    stream >> veri._IsletmeID;
+    stream >> veri._OtobusID;
+    return stream;
+}

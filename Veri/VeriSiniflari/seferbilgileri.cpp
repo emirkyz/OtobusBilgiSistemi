@@ -84,3 +84,25 @@ void Seferbilgileri::setMolaSayisi(Tamsayi newMolaSayisi)
     _MolaSayisi = newMolaSayisi;
     emit MolaSayisiChanged(_MolaSayisi);
 }
+QDataStream &operator<<(QDataStream &stream, const Seferbilgileri &veri){
+    stream << veri._id;
+    stream << veri._silindiMi;
+    stream << veri._BaslangicNoktasi;
+    stream << veri._VarisNoktasi;
+    stream << veri._Mesafe;
+    stream << veri._MolaSayisi;
+    stream << veri._OtobusID;
+    stream << veri._SeferUzunluk;
+    return stream;
+}
+QDataStream &operator>>(QDataStream &stream, Seferbilgileri &veri){
+    stream >> veri._id;
+    stream >> veri._silindiMi;
+    stream >> veri._BaslangicNoktasi;
+    stream >> veri._VarisNoktasi;
+    stream >> veri._Mesafe;
+    stream >> veri._MolaSayisi;
+    stream >> veri._OtobusID;
+    stream >> veri._SeferUzunluk;
+    return stream;
+}

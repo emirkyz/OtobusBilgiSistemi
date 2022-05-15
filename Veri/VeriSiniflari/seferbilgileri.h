@@ -52,7 +52,11 @@ private:
     Metin _VarisNoktasi;
     Metin _BaslangicNoktasi;
     Tamsayi _OtobusID;
+    friend QDataStream &operator<<(QDataStream &stream, const Seferbilgileri &veri);
+    friend QDataStream &operator>>(QDataStream &stream, Seferbilgileri &veri);
 
 };
+QDataStream &operator<<(QDataStream &stream, const Seferbilgileri &veri);
+QDataStream &operator>>(QDataStream &stream, Seferbilgileri &veri);
 
 #endif // SEFERBILGILERI_H

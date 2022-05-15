@@ -57,3 +57,21 @@ void Seyehatbilgileri::setSeyehatSaati(const Saat &newSeyehatSaati)
     _SeyehatSaati = newSeyehatSaati;
     emit SeyehatSaatiChanged(_SeyehatSaati);
 }
+QDataStream &operator<<(QDataStream &stream, const Seyehatbilgileri &veri){
+    stream << veri._id;
+    stream << veri._silindiMi;
+    stream << veri._OtobusId;
+    stream << veri._SeferId;
+    stream << veri._SeyehatSaati;
+    stream << veri._SeyehatTarihi;
+    return stream;
+}
+QDataStream &operator>>(QDataStream &stream, Seyehatbilgileri &veri){
+    stream >> veri._id;
+    stream >> veri._silindiMi;
+    stream >> veri._OtobusId;
+    stream >> veri._SeferId;
+    stream >> veri._SeyehatSaati;
+    stream >> veri._SeyehatTarihi;
+    return stream;
+}
