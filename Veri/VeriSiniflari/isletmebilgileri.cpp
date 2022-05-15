@@ -70,3 +70,25 @@ void IsletmeBilgileri::setAdres(const Metin &newAdres)
     _Adres = newAdres;
     emit AdresChanged(_Adres);
 }
+
+QDataStream &operator<<(QDataStream &stream, const IsletmeBilgileri &veri){
+    stream << veri._IsletmeAdi;
+    stream << veri._VergiNo;
+    stream << veri._Adres;
+    stream << veri._KurucuAd;
+    stream << veri._KurucuSoyad;
+    stream << veri._id;
+    stream << veri._silindiMi;
+    return stream;
+}
+
+QDataStream &operator>>(QDataStream &stream, IsletmeBilgileri &veri){
+    stream >> veri._IsletmeAdi;
+    stream >> veri._VergiNo;
+    stream >> veri._Adres;
+    stream >> veri._KurucuAd;
+    stream >> veri._KurucuSoyad;
+    stream >> veri._id;
+    stream >> veri._silindiMi;
+    return stream;
+}

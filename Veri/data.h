@@ -23,6 +23,11 @@ public:
     YolcuDeposu &yolcular(){return _yolcular;}
     SeyehatDeposu &seyehatler(){return _seyehatler;}
 
+    void kaydet();
+    void yukle();
+
+    ~Data();
+
     static Data& d1(){
         static Data veri;
         return veri;
@@ -40,8 +45,13 @@ private:
     SoforDeposu _soforler;
     YolcuDeposu _yolcular;
     SeyehatDeposu _seyehatler;
+
+    QString dosyaYolu();
+    friend QDataStream &operator<<(QDataStream &stream, const Data &veri);
+    friend QDataStream &operator>>(QDataStream &stream, Data &veri);
 };
 
-
+QDataStream &operator<<(QDataStream &stream, const Data &veri);
+QDataStream &operator>>(QDataStream &stream, Data &veri);
 
 #endif // DATA_H

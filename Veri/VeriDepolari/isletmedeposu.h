@@ -11,7 +11,12 @@ public:
     explicit IsletmeDeposu(QObject *parent = nullptr);
 
 signals:
+private:
+    friend QDataStream &operator<<(QDataStream &stream, const IsletmeDeposu &veri);
+    friend QDataStream &operator>>(QDataStream &stream, IsletmeDeposu &veri);
 
 };
+QDataStream &operator<<(QDataStream &stream, const IsletmeDeposu &veri);
+QDataStream &operator>>(QDataStream &stream, IsletmeDeposu &veri);
 
 #endif // ISLETMEDEPOSU_H

@@ -42,8 +42,12 @@ private:
     Metin _KurucuSoyad;
     Metin _VergiNo;
     Metin _Adres;
+    friend QDataStream &operator<<(QDataStream &stream, const IsletmeBilgileri &veri);
+    friend QDataStream &operator>>(QDataStream &stream, IsletmeBilgileri &veri);
 
 
 };
+QDataStream &operator<<(QDataStream &stream, const IsletmeBilgileri &veri);
+QDataStream &operator>>(QDataStream &stream, IsletmeBilgileri &veri);
 
 #endif // ISLETMEBILGILERI_H

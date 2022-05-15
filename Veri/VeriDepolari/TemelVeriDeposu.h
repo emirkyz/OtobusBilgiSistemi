@@ -10,7 +10,7 @@ public:
 
     TemelVeriDeposu() : _veriler{}, _sonId(0){}
 
-    DataPtr yeniNesne(){ return std::make_shared<Data>();  }
+    inline DataPtr yeniNesne(){ return std::make_shared<Data>();  }
 
     typedef std::function<bool(DataPtr)> FiltreFonksiyonu;
 
@@ -81,6 +81,18 @@ protected:
     DataList _veriler;
     Tamsayi _sonId;    
 };
+
+template <class Data>
+QDataStream &operator<<(QDataStream &stream, const std::shared_ptr<Data> &veri){
+    stream << *veri;
+    return stream;
+}
+template <class Data>
+QDataStream &operator>>(QDataStream &stream, std::shared_ptr<Data> &veri){
+    veri = std::make_shared<Data>();
+    stream >> *veri;
+    return stream;
+}
 
 
 #endif // TEMELVERIDEPOSU_H
