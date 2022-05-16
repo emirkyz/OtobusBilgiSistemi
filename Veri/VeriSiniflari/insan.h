@@ -42,7 +42,7 @@ signals:
 protected:
     Metin _Ad;
     Metin _Soyad;
-    Tamsayi _Yas;
+    Tamsayi _Yas = 0;
     Metin _TcKimlikNo;
     Metin _HesKodu;
 

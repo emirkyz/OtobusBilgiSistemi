@@ -48,7 +48,7 @@ private:
 
     Metin _EhliyetSinifi;
     Metin _OtobusPlakasi;
-    Tamsayi _TecrubeSuresi;
+    Tamsayi _TecrubeSuresi = 0;
     Tamsayi _OtobusID;
     Tamsayi _IsletmeID;
     Tamsayi _SeferID;
