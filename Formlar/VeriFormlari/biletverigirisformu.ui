@@ -13,8 +13,15 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="../../Kaynaklar.qrc">
+    <normaloff>:/Resimler/YeniBilet.png</normaloff>:/Resimler/YeniBilet.png</iconset>
+  </property>
   <property name="styleSheet">
-   <string notr="true">QPushButton#btnKaydet {
+   <string notr="true">
+
+
+QPushButton#btnKaydet {
 	qproperty-icon: url(:/Resimler/Kaydet.png);
 	qproperty-iconSize: 16px 16px;
    qproperty-text: &quot;&amp;Kaydet&quot;;

@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="../../Kaynaklar.qrc">
+    <normaloff>:/Resimler/Sefer.png</normaloff>:/Resimler/Sefer.png</iconset>
+  </property>
   <property name="styleSheet">
    <string notr="true">QPushButton#btnKaydet {
 	qproperty-icon: url(:/Resimler/Kaydet.png);

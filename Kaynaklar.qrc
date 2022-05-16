@@ -13,7 +13,7 @@
         <file alias="background.png">Resimler/backgroundv1.jpg</file>
         <file alias="Otobus.png">Resimler/bus.png</file>
         <file alias="Window.png">Resimler/windowIcon.png</file>
-        <file alias="busBackground.png">Resimler/bus_backg.jpg</file>
         <file alias="YeniBilet.png">Resimler/bilet.png</file>
+        <file alias="busBackground.png">Resimler/bus_backgOLD.jpg</file>
     </qresource>
 </RCC>

@@ -3,7 +3,9 @@
 
 #include <QWidget>
 #include "TemelVeriGirisi.h"
+#include "qstyleoption.h"
 #include <Veri/VeriSiniflari/otobusbilgileri.h>
+
 namespace Ui {
 class OtobusGirisFormu;
 }
@@ -16,6 +18,7 @@ public:
     explicit OtobusGirisFormu(QWidget *parent = nullptr);
     ~OtobusGirisFormu();
 
+    void paintEvent(QPaintEvent *) override;
 private:
     Ui::OtobusGirisFormu *ui;
 
