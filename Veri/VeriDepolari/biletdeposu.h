@@ -12,7 +12,12 @@ public:
     explicit BiletDeposu(QObject *parent = nullptr);
 
 signals:
+private:
+    friend QDataStream &operator<<(QDataStream &stream, const BiletDeposu &veri);
+    friend QDataStream &operator>>(QDataStream &stream, BiletDeposu &veri);
 
 };
+QDataStream &operator<<(QDataStream &stream, const BiletDeposu &veri);
+QDataStream &operator>>(QDataStream &stream, BiletDeposu &veri);
 
 #endif // BILETDEPOSU_H

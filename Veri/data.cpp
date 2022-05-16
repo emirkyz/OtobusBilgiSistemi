@@ -59,6 +59,7 @@ QDataStream &operator<<(QDataStream &stream, const Data &veri){
     stream << veri._soforler;
     stream << veri._yolcular;
     stream << veri._seyehatler;
+    stream << veri._biletler;
     return stream;
 }
 QDataStream &operator>>(QDataStream &stream, Data &veri){
@@ -69,7 +70,7 @@ QDataStream &operator>>(QDataStream &stream, Data &veri){
     stream >> veri._soforler;
     stream >> veri._yolcular;
     stream >> veri._seyehatler;
-
+    stream >> veri._biletler;
     return stream;
 }
 

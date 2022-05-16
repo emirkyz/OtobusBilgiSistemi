@@ -6,6 +6,7 @@
 #include <Islemler/VeriGirisi/seyehatgirisislemi.h>
 #include <Islemler/VeriGirisi/soforgirisislemi.h>
 #include <Islemler/VeriGirisi/yolcugirisislemi.h>
+#include <Islemler/VeriGirisi/biletgirisislemi.h>
 
 IslemDeposu &IslemDeposu::fb()
 {
@@ -34,4 +35,5 @@ IslemDeposu::IslemDeposu(QObject *parent)
     _islemler.append(std::make_shared<SeyehatGirisIslemi>());
     _islemler.append(std::make_shared<SoforGirisIslemi>());
     _islemler.append(std::make_shared<YolcuGirisIslemi>());
+    _islemler.append(std::make_shared<BiletGirisIslemi>());
 }

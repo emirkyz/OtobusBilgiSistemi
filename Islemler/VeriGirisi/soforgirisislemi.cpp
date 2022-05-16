@@ -16,7 +16,7 @@ SoforGirisIslemi::SoforGirisIslemi(QObject *parent)
 void SoforGirisIslemi::main()
 {
     auto veri=Data::d1().soforler().yeniNesne();
-    SoforVeriGirisFormu *form = new SoforVeriGirisFormu;
+    SoforVeriGirisFormu *form = new SoforVeriGirisFormu();
     connect(form, &SoforVeriGirisFormu::veriKaydet,this, &SoforGirisIslemi::depoEkle );
     form->setAttribute(Qt::WA_DeleteOnClose);
     form->setWindowModality(Qt::ApplicationModal);

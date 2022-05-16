@@ -13,7 +13,7 @@ public:
 
     typedef enum {IslemIsletmeGiris=0, IslemOtobusGiris,
                    IslemSeferGiris, IslemKuralGiris, IslemSeyehatGiris,
-                   IslemSoforGiris, IslemYolcuGiris} IslemSirasi;
+                   IslemSoforGiris, IslemYolcuGiris, IslemBiletGiris} IslemSirasi;
 
     //0 dan başlayarak yazdığın kelimeler typedef gibi sayılar verir
 

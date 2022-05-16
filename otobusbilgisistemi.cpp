@@ -42,8 +42,9 @@ OtobusBilgiSistemi::OtobusBilgiSistemi(QWidget *parent)
     ui->tbYolcular->setDefaultAction(IslemDeposu::fb().getAction(IslemDeposu::IslemYolcuGiris));
     ui->toolBarVeriGiris->addAction(IslemDeposu::fb().getAction(IslemDeposu::IslemYolcuGiris));
 
-
-
+    ui->menuBiletler->addAction(IslemDeposu::fb().getAction(IslemDeposu::IslemBiletGiris));
+    ui->tbBilet->setDefaultAction(IslemDeposu::fb().getAction(IslemDeposu::IslemBiletGiris));
+    ui->toolBarVeriGiris->addAction(IslemDeposu::fb().getAction(IslemDeposu::IslemBiletGiris));
 }
 
 OtobusBilgiSistemi::~OtobusBilgiSistemi()

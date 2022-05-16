@@ -17,7 +17,7 @@ SeyehatKurallariIslemi::SeyehatKurallariIslemi(QObject *parent)
 void SeyehatKurallariIslemi::main()
 {
     auto veri = Data::d1().kurallar().yeniNesne();
-    SeyehatKurallariVeriGirisFormu *form = new SeyehatKurallariVeriGirisFormu;
+    SeyehatKurallariVeriGirisFormu *form = new SeyehatKurallariVeriGirisFormu();
     connect(form, &SeyehatKurallariVeriGirisFormu::veriKaydet, this, &SeyehatKurallariIslemi::depoEkle);
     form->setAttribute(Qt::WA_DeleteOnClose);
     form->setWindowModality(Qt::ApplicationModal);

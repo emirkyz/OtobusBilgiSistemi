@@ -9,6 +9,7 @@
 #include <Veri/VeriDepolari/sofordeposu.h>
 #include <Veri/VeriDepolari/yolcudeposu.h>
 #include <Veri/VeriDepolari/seyehatdeposu.h>
+#include <Veri/VeriDepolari/biletdeposu.h>
 
 class Data : public QObject
 {
@@ -22,7 +23,7 @@ public:
     SoforDeposu &soforler(){return _soforler;}
     YolcuDeposu &yolcular(){return _yolcular;}
     SeyehatDeposu &seyehatler(){return _seyehatler;}
-
+    BiletDeposu &biletler(){return _biletler;}
     void kaydet();
     void yukle();
 
@@ -45,6 +46,7 @@ private:
     SoforDeposu _soforler;
     YolcuDeposu _yolcular;
     SeyehatDeposu _seyehatler;
+    BiletDeposu _biletler;
 
     QString dosyaYolu();
     friend QDataStream &operator<<(QDataStream &stream, const Data &veri);

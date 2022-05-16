@@ -15,7 +15,7 @@ YolcuGirisIslemi::YolcuGirisIslemi(QObject *parent)
 void YolcuGirisIslemi::main()
 {
     auto veri = Data::d1().yolcular().yeniNesne();
-    YolcuGirisFormu *form = new YolcuGirisFormu;
+    YolcuGirisFormu *form = new YolcuGirisFormu();
     connect(form, &YolcuGirisFormu::veriKaydet,this,&YolcuGirisIslemi::depoEkle);
     form->setAttribute(Qt::WA_DeleteOnClose);
     form->setWindowModality(Qt::ApplicationModal);
