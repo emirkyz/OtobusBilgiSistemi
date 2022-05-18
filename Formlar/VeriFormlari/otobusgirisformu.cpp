@@ -28,7 +28,9 @@ void OtobusGirisFormu::paintEvent(QPaintEvent *)
     image.load(":/Resimler/busBackground.png");
     QPainter painter(this);
     auto scaled = image.scaled(width(), height(), Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
+    painter.setOpacity(0.8);
     painter.drawImage(0,51,scaled);
+
 }
 
 
