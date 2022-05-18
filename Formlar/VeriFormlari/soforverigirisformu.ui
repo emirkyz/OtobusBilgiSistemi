@@ -658,7 +658,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
         <string>Soyad</string>
        </property>
        <property name="margin">
-        <number>10</number>
+        <number>8</number>
        </property>
       </widget>
      </item>
@@ -678,7 +678,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
         <string>TC Kimlik NO</string>
        </property>
        <property name="margin">
-        <number>10</number>
+        <number>6</number>
        </property>
       </widget>
      </item>
@@ -766,6 +766,9 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
        <property name="text">
         <string>Ehliyet Sınıfı</string>
        </property>
+       <property name="margin">
+        <number>2</number>
+       </property>
       </widget>
      </item>
      <item row="1" column="1">
@@ -779,12 +782,18 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
        <property name="text">
         <string>Otobus Plakası</string>
        </property>
+       <property name="margin">
+        <number>2</number>
+       </property>
       </widget>
      </item>
      <item row="2" column="0">
       <widget class="QLabel" name="lblTecubeSuresi">
        <property name="text">
         <string>Tecrübe Süresi</string>
+       </property>
+       <property name="margin">
+        <number>2</number>
        </property>
       </widget>
      </item>
