@@ -22,6 +22,7 @@ public:
         }
         _sonId++;
         veri->setId(_sonId);
+        veri->setSilindiMi(false);
         _veriler.append(veri);
         return true;
       }

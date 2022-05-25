@@ -14,8 +14,8 @@ OtobusBilgiSistemi::OtobusBilgiSistemi(QWidget *parent)
     ui->toolBarVeriGiris->addAction(IslemDeposu::fb().getAction(IslemDeposu::IslemIsletmeGiris));
     // button a action eklenemez, bu yüzden toolbutton da dafault action değiştirilir!!!!
     ui->tbIsletme->setDefaultAction(IslemDeposu::fb().getAction(IslemDeposu::IslemIsletmeGiris));
-
-
+    ui->menu_letme->addAction(IslemDeposu::fb().getAction(IslemDeposu::IslemIsletmeListe));
+    ui->tblIsletmeListesi->setDefaultAction(IslemDeposu::fb().getAction(IslemDeposu::IslemIsletmeListe));
 
 
     ui->menuOtobusler->addAction(IslemDeposu::fb().getAction(IslemDeposu::IslemOtobusGiris));

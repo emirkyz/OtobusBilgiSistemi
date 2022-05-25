@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <Veri/Tanimlar.h>
+
 namespace Ui {
 class IsletmeListesi;
 }
@@ -15,8 +16,13 @@ public:
     explicit IsletmeListesi(QWidget *parent = nullptr);
     ~IsletmeListesi();
 
+    const IsletmeBilgileriListesi &liste() const;
+    void setListe(const IsletmeBilgileriListesi &newListe);
+
 private:
     Ui::IsletmeListesi *ui;
+    IsletmeBilgileriListesi _liste;
+    void ekranGuncelle();
 };
 
 #endif // ISLETMELISTESI_H

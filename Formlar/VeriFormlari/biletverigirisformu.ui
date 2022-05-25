@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>473</width>
-    <height>261</height>
+    <height>279</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -622,6 +622,13 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
      <property name="bottomMargin">
       <number>50</number>
      </property>
+     <item row="2" column="0">
+      <widget class="QLabel" name="lblPeronNumarasi">
+       <property name="text">
+        <string>Peron Numarası</string>
+       </property>
+      </widget>
+     </item>
      <item row="1" column="2" rowspan="2">
       <layout class="QVBoxLayout" name="verticalLayout">
        <property name="leftMargin">
@@ -651,17 +658,17 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
        </item>
       </layout>
      </item>
-     <item row="1" column="1">
-      <widget class="QSpinBox" name="spnKoltukNumarasi">
+     <item row="2" column="1">
+      <widget class="QSpinBox" name="spnPeronNumarasi">
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
        </property>
       </widget>
      </item>
-     <item row="2" column="1">
-      <widget class="QSpinBox" name="spnPeronNumarasi">
-       <property name="alignment">
-        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     <item row="0" column="0" colspan="2">
+      <widget class="Line" name="line">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
        </property>
       </widget>
      </item>
@@ -672,17 +679,10 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
        </property>
       </widget>
      </item>
-     <item row="2" column="0">
-      <widget class="QLabel" name="lblPeronNumarasi">
-       <property name="text">
-        <string>Peron Numarası</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="0" colspan="2">
-      <widget class="Line" name="line">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
+     <item row="1" column="1">
+      <widget class="QSpinBox" name="spnKoltukNumarasi">
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
        </property>
       </widget>
      </item>

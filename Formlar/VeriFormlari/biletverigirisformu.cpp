@@ -19,6 +19,7 @@ void BiletVeriGirisFormu::ekranGuncelle()
 {
     ui->spnKoltukNumarasi->setValue(_veri->KoltukNumarasi());
     ui->spnPeronNumarasi->setValue(_veri->PeronNumarasi());
+
 }
 
 void BiletVeriGirisFormu::veriGuncelle()

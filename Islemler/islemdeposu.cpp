@@ -7,7 +7,7 @@
 #include <Islemler/VeriGirisi/soforgirisislemi.h>
 #include <Islemler/VeriGirisi/yolcugirisislemi.h>
 #include <Islemler/VeriGirisi/biletgirisislemi.h>
-
+#include <Islemler/VeriListeleme/isletmelistesiislemi.h>
 IslemDeposu &IslemDeposu::fb()
 {
     static IslemDeposu tempislem;
@@ -36,4 +36,6 @@ IslemDeposu::IslemDeposu(QObject *parent)
     _islemler.append(std::make_shared<SoforGirisIslemi>());
     _islemler.append(std::make_shared<YolcuGirisIslemi>());
     _islemler.append(std::make_shared<BiletGirisIslemi>());
+
+    _islemler.append(std::make_shared<IsletmeListesiIslemi>());
 }

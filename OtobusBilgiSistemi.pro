@@ -26,6 +26,7 @@ SOURCES += \
     Islemler/VeriGirisi/seyehatkurallariislemi.cpp \
     Islemler/VeriGirisi/soforgirisislemi.cpp \
     Islemler/VeriGirisi/yolcugirisislemi.cpp \
+    Islemler/VeriListeleme/isletmelistesiislemi.cpp \
     Islemler/islemdeposu.cpp \
     Islemler/tumkullaniciislemleri.cpp \
     Veri/Ayarlar/ayarlar.cpp \
@@ -71,6 +72,7 @@ HEADERS += \
     Islemler/VeriGirisi/seyehatkurallariislemi.h \
     Islemler/VeriGirisi/soforgirisislemi.h \
     Islemler/VeriGirisi/yolcugirisislemi.h \
+    Islemler/VeriListeleme/isletmelistesiislemi.h \
     Islemler/islemdeposu.h \
     Islemler/tumkullaniciislemleri.h \
     Veri/Ayarlar/ayarlar.h \

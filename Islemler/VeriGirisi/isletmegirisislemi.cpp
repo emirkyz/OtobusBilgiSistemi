@@ -16,7 +16,6 @@ IsletmeGirisIslemi::IsletmeGirisIslemi(QObject *parent)
 void IsletmeGirisIslemi::main(){
 
     auto veri = Data::d1().isletmeler().yeniNesne();
-
     IsletmeVeriGirisFormu *form = new IsletmeVeriGirisFormu();
     connect(form,&IsletmeVeriGirisFormu::veriKaydet, this, &IsletmeGirisIslemi::depoEkle );
     form->setAttribute(Qt::WA_DeleteOnClose);
