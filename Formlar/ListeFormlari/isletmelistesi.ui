@@ -23,30 +23,37 @@
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_2">
         <item>
-         <widget class="QRadioButton" name="radioButton">
+         <widget class="QRadioButton" name="rbIsletmeAdi">
           <property name="text">
            <string>İşletme Adı</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QRadioButton" name="radioButton_2">
+         <widget class="QRadioButton" name="rbKurucuAd">
           <property name="text">
            <string>Kurucu Adı</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QRadioButton" name="radioButton_3">
+         <widget class="QRadioButton" name="rbKurucuSoyad">
           <property name="text">
            <string>Kurucu Soyadı</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QRadioButton" name="radioButton_4">
+         <widget class="QRadioButton" name="rbVergiNo">
           <property name="text">
            <string>Vergi Numarası</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="rbAdres">
+          <property name="text">
+           <string>Adres</string>
           </property>
          </widget>
         </item>
@@ -61,7 +68,7 @@
        <property name="title">
         <string>Arama Türü</string>
        </property>
-       <widget class="QRadioButton" name="radioButton_6">
+       <widget class="QRadioButton" name="rbBiten">
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -74,7 +81,7 @@
          <string>ile biten</string>
         </property>
        </widget>
-       <widget class="QRadioButton" name="radioButton_7">
+       <widget class="QRadioButton" name="rbIceren">
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -87,7 +94,7 @@
          <string>içeren</string>
         </property>
        </widget>
-       <widget class="QRadioButton" name="radioButton_8">
+       <widget class="QRadioButton" name="rbBaslayan">
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -120,7 +127,7 @@
          <string>Arama Metni</string>
         </property>
        </widget>
-       <widget class="QLineEdit" name="lineEdit">
+       <widget class="QLineEdit" name="leAranan">
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -128,6 +135,19 @@
           <width>211</width>
           <height>22</height>
          </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnAra">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>100</y>
+          <width>211</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ara</string>
         </property>
        </widget>
       </widget>
@@ -140,5 +160,22 @@
   </layout>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>leAranan</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>btnAra</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>518</x>
+     <y>88</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>517</x>
+     <y>120</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

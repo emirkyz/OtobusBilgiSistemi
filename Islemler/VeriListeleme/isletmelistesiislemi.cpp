@@ -21,7 +21,7 @@ void IsletmeListesiIslemi::qMain()
     auto veri = Data::d1().isletmeler().tumunuBul([](std::shared_ptr<IsletmeBilgileri>){
         return true;
     });
-    IsletmeListesi *form = new IsletmeListesi();
+    IsletmeListesi *form = new IsletmeListesi(Data::d1().isletmeler());
     form->setListe(veri);
     form->setAttribute(Qt::WA_DeleteOnClose);
     form->setWindowModality(Qt::ApplicationModal);
