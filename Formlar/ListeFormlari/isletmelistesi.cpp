@@ -164,7 +164,7 @@ void IsletmeListesi::on_btnAra_clicked()
         f.setFiltre(IsletmeFiltrelemeFonksiyonu::FiltreIleBiten);
     }
 
-    f.setArananDeger(ui->leAranan->text());
+    f.setArananDeger(ui->leAranan->text().toLower());
 
     auto liste = _depo.tumunuBul(f);
     setListe(liste);

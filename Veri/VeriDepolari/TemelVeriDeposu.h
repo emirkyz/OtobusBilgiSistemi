@@ -8,7 +8,7 @@ public:
     typedef std::shared_ptr<Data> DataPtr;
     typedef QList<DataPtr> DataList;
 
-    TemelVeriDeposu() : _veriler{100}, _sonId(0){}
+    TemelVeriDeposu() : _veriler{}, _sonId(0){}
 
     inline DataPtr yeniNesne(){ return std::make_shared<Data>();  }
 

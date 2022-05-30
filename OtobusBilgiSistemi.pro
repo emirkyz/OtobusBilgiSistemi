@@ -10,6 +10,7 @@ CONFIG += c++17
 
 SOURCES += \
     Formlar/ListeFormlari/isletmelistesi.cpp \
+    Formlar/ListeFormlari/otobuslistesi.cpp \
     Formlar/VeriFormlari/biletverigirisformu.cpp \
     Formlar/VeriFormlari/isletmeverigirisformu.cpp \
     Formlar/VeriFormlari/otobusgirisformu.cpp \
@@ -27,6 +28,7 @@ SOURCES += \
     Islemler/VeriGirisi/soforgirisislemi.cpp \
     Islemler/VeriGirisi/yolcugirisislemi.cpp \
     Islemler/VeriListeleme/isletmelistesiislemi.cpp \
+    Islemler/VeriListeleme/otobuslistelemeislemi.cpp \
     Islemler/islemdeposu.cpp \
     Islemler/tumkullaniciislemleri.cpp \
     Veri/Ayarlar/ayarlar.cpp \
@@ -54,6 +56,7 @@ SOURCES += \
 
 HEADERS += \
     Formlar/ListeFormlari/isletmelistesi.h \
+    Formlar/ListeFormlari/otobuslistesi.h \
     Formlar/VeriFormlari/TemelVeriGirisi.h \
     Formlar/VeriFormlari/biletverigirisformu.h \
     Formlar/VeriFormlari/isletmeverigirisformu.h \
@@ -73,6 +76,7 @@ HEADERS += \
     Islemler/VeriGirisi/soforgirisislemi.h \
     Islemler/VeriGirisi/yolcugirisislemi.h \
     Islemler/VeriListeleme/isletmelistesiislemi.h \
+    Islemler/VeriListeleme/otobuslistelemeislemi.h \
     Islemler/islemdeposu.h \
     Islemler/tumkullaniciislemleri.h \
     Veri/Ayarlar/ayarlar.h \
@@ -101,6 +105,7 @@ HEADERS += \
 
 FORMS += \
     Formlar/ListeFormlari/isletmelistesi.ui \
+    Formlar/ListeFormlari/otobuslistesi.ui \
     Formlar/VeriFormlari/biletverigirisformu.ui \
     Formlar/VeriFormlari/isletmeverigirisformu.ui \
     Formlar/VeriFormlari/otobusgirisformu.ui \
