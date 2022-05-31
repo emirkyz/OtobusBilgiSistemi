@@ -40,6 +40,7 @@ void OtobusGirisFormu::ekranGuncelle(){
     ui->leModel->setText(_veri->Model());
     ui->lePlaka->setText(_veri->Plaka());
     ui->leRenk->setText(_veri->Renk());
+    ui->spnKapasite->setValue(_veri->Kapasite());
 }
 
 void OtobusGirisFormu::veriGuncelle(){
@@ -48,4 +49,5 @@ void OtobusGirisFormu::veriGuncelle(){
     _veri->setModel(ui->leModel->text());
     _veri->setPlaka(ui->lePlaka->text());
     _veri->setRenk(ui->leRenk->text());
+    _veri->setKapasite(ui->spnKapasite->value());
 }
