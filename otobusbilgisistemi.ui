@@ -598,7 +598,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
      <string notr="true">QTableWidget {background-color: transparent;}</string>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <property name="documentMode">
      <bool>true</bool>
