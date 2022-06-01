@@ -14,12 +14,13 @@ public:
     typedef enum {IslemIsletmeGiris=0, IslemOtobusGiris,
                    IslemSeferGiris, IslemKuralGiris, IslemSeyehatGiris,
                    IslemSoforGiris, IslemYolcuGiris, IslemBiletGiris,
-                   IslemIsletmeListe, IslemOtobusListe,} IslemSirasi;
+                   IslemIsletmeListe, IslemOtobusListe,IslemIsletmeSilme} IslemSirasi;
 
     //0 dan başlayarak yazdığın kelimeler typedef gibi sayılar verir
 
     QAction* getAction(IslemSirasi x);
     void calistir(IslemSirasi y);
+    std::shared_ptr<TemelKullaniciIslemi> getIslem(IslemSirasi z);
 
 private:
 

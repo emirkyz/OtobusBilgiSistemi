@@ -4,6 +4,8 @@
 #include <QTableWidgetItem>
 #include <Veri/VeriSiniflari/isletmebilgileri.h>
 #include <Veri/VeriDepolari/isletmedeposu.h>
+#include <Islemler/islemdeposu.h>
+#include <Islemler/VeriSilme/isletmesilmeislemi.h>
 IsletmeListesi::IsletmeListesi(IsletmeDeposu &depo,QWidget *parent) :
     QWidget(parent),
     ui(new Ui::IsletmeListesi),_depo(depo)
@@ -58,10 +60,20 @@ void IsletmeListesi::ekranGuncelle()
         hucre->setText(nesne_i->Adres());
         ui->tblIsletmeler->setItem(i,4,hucre);
 
+        auto silmeButonu = new QPushButton();
+        auto gui = this->ui;
+        silmeButonu->setText("Sil");
+        connect(silmeButonu, &QPushButton::clicked,[nesne_i,gui](){
+            auto islem1 = IslemDeposu::fb().getIslem(IslemDeposu::IslemIsletmeSilme);
+            auto islem2 = std::dynamic_pointer_cast<IsletmeSilmeIslemi>(islem1);
+            islem2->setVeri(nesne_i);
+            islem2->main();
+            gui->btnAra->click();
+        });
+
+
+        ui->tblIsletmeler->setCellWidget(i,4,silmeButonu);
     }
-
-
-
 }
 
 

@@ -29,6 +29,7 @@ SOURCES += \
     Islemler/VeriGirisi/yolcugirisislemi.cpp \
     Islemler/VeriListeleme/isletmelistesiislemi.cpp \
     Islemler/VeriListeleme/otobuslistelemeislemi.cpp \
+    Islemler/VeriSilme/isletmesilmeislemi.cpp \
     Islemler/islemdeposu.cpp \
     Islemler/tumkullaniciislemleri.cpp \
     Veri/Ayarlar/ayarlar.cpp \
@@ -77,6 +78,7 @@ HEADERS += \
     Islemler/VeriGirisi/yolcugirisislemi.h \
     Islemler/VeriListeleme/isletmelistesiislemi.h \
     Islemler/VeriListeleme/otobuslistelemeislemi.h \
+    Islemler/VeriSilme/isletmesilmeislemi.h \
     Islemler/islemdeposu.h \
     Islemler/tumkullaniciislemleri.h \
     Veri/Ayarlar/ayarlar.h \

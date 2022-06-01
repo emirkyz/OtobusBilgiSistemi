@@ -22,7 +22,7 @@ OtobusBilgiSistemi::OtobusBilgiSistemi(QWidget *parent)
     ui->toolBarVeriGiris->addAction(IslemDeposu::fb().getAction(IslemDeposu::IslemOtobusGiris));
     ui->tbOtobus->setDefaultAction(IslemDeposu::fb().getAction(IslemDeposu::IslemOtobusGiris));
     ui->tblOtobusListesi->setDefaultAction(IslemDeposu::fb().getAction(IslemDeposu::IslemOtobusListe));
-
+    ui->menuOtobusler->addAction(IslemDeposu::fb().getAction(IslemDeposu::IslemOtobusListe));
 
     ui->menuSeferler->addAction(IslemDeposu::fb().getAction(IslemDeposu::IslemSeferGiris));
     ui->toolBarVeriGiris->addAction(IslemDeposu::fb().getAction(IslemDeposu::IslemSeferGiris));
