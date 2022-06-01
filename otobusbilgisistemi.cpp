@@ -24,6 +24,7 @@ OtobusBilgiSistemi::OtobusBilgiSistemi(QWidget *parent)
     ui->tblOtobusListesi->setDefaultAction(IslemDeposu::fb().getAction(IslemDeposu::IslemOtobusListe));
     ui->menuOtobusler->addAction(IslemDeposu::fb().getAction(IslemDeposu::IslemOtobusListe));
 
+
     ui->menuSeferler->addAction(IslemDeposu::fb().getAction(IslemDeposu::IslemSeferGiris));
     ui->toolBarVeriGiris->addAction(IslemDeposu::fb().getAction(IslemDeposu::IslemSeferGiris));
     ui->tbSefer->setDefaultAction(IslemDeposu::fb().getAction(IslemDeposu::IslemSeferGiris));
@@ -43,6 +44,11 @@ OtobusBilgiSistemi::OtobusBilgiSistemi(QWidget *parent)
     ui->menuYolcular->addAction(IslemDeposu::fb().getAction(IslemDeposu::IslemYolcuGiris));
     ui->tbYolcular->setDefaultAction(IslemDeposu::fb().getAction(IslemDeposu::IslemYolcuGiris));
     ui->toolBarVeriGiris->addAction(IslemDeposu::fb().getAction(IslemDeposu::IslemYolcuGiris));
+    ui->menuYolcular->addAction(IslemDeposu::fb().getAction(IslemDeposu::IslemYolcuListe));
+    ui->tblYolcuListesi->setDefaultAction(IslemDeposu::fb().getAction(IslemDeposu::IslemYolcuListe));
+
+
+
 
     ui->menuBiletler->addAction(IslemDeposu::fb().getAction(IslemDeposu::IslemBiletGiris));
     ui->tbBilet->setDefaultAction(IslemDeposu::fb().getAction(IslemDeposu::IslemBiletGiris));

@@ -638,7 +638,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
      <item>
       <widget class="QLabel" name="lblBaslik">
        <property name="text">
-        <string>Yeni Otobüs Gİrişi</string>
+        <string>Yeni Otobüs Girişi</string>
        </property>
       </widget>
      </item>

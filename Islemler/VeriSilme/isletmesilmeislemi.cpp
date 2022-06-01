@@ -4,15 +4,14 @@
 IsletmeSilmeIslemi::IsletmeSilmeIslemi(QObject *parent)
     : QObject{parent}
 {
-    _islem = new QAction();
-    connect(_islem, &QAction::triggered,this, &IsletmeSilmeIslemi::main  );
+    _islem = new QAction;
+    connect(_islem, &QAction::triggered,this, &IsletmeSilmeIslemi::main);
 }
 
 
-void IsletmeSilmeIslemi::main()
+void IsletmeSilmeIslemi::qMain()
 {
-    auto cevap = QMessageBox::question
-        (nullptr,tr("İşletme Silme Onayı"),tr("%1 İsimli İşletmeyi silmek istediğinizden eminmisiniz?").arg(_veri->IsletmeAdi()));
+    auto cevap = QMessageBox::question(nullptr,tr("İşletme Silme Onayı"),tr("%1 İsimli İşletmeyi silmek istediğinizden eminmisiniz?").arg(_veri->IsletmeAdi()));
 
     if(cevap==QMessageBox::Yes){
         Data::d1().isletmeler().nesneSil(_veri);

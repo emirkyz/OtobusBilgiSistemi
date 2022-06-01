@@ -2,10 +2,12 @@
 #include "ui_isletmelistesi.h"
 #include <QStringList>
 #include <QTableWidgetItem>
+
 #include <Veri/VeriSiniflari/isletmebilgileri.h>
 #include <Veri/VeriDepolari/isletmedeposu.h>
 #include <Islemler/islemdeposu.h>
 #include <Islemler/VeriSilme/isletmesilmeislemi.h>
+
 IsletmeListesi::IsletmeListesi(IsletmeDeposu &depo,QWidget *parent) :
     QWidget(parent),
     ui(new Ui::IsletmeListesi),_depo(depo)
@@ -32,10 +34,10 @@ void IsletmeListesi::setListe(const IsletmeBilgileriListesi &newListe)
 void IsletmeListesi::ekranGuncelle()
 {
     ui->tblIsletmeler->clear();
-    ui->tblIsletmeler->setColumnCount(5);
+    ui->tblIsletmeler->setColumnCount(6);
     QStringList Basliklar;
     Basliklar << tr("İşletme Adı") << tr("Kurucu Adı") << tr("Kurucu Soyad")
-              << tr("Vergi Numarası") << tr("Adres");
+              << tr("Vergi Numarası") << tr("Adres") << tr("Sil");
     ui->tblIsletmeler->setHorizontalHeaderLabels(Basliklar);
     ui->tblIsletmeler->setRowCount(_liste.size());
     for(int i=0;i<_liste.size();i++){
@@ -72,7 +74,7 @@ void IsletmeListesi::ekranGuncelle()
         });
 
 
-        ui->tblIsletmeler->setCellWidget(i,4,silmeButonu);
+        ui->tblIsletmeler->setCellWidget(i,5,silmeButonu);
     }
 }
 

@@ -14,8 +14,13 @@ public:
     typedef enum {IslemIsletmeGiris=0, IslemOtobusGiris,
                    IslemSeferGiris, IslemKuralGiris, IslemSeyehatGiris,
                    IslemSoforGiris, IslemYolcuGiris, IslemBiletGiris,
-                   IslemIsletmeListe, IslemOtobusListe,IslemIsletmeSilme} IslemSirasi;
+                   IslemIsletmeListe, IslemOtobusListe,IslemYolcuListe,IslemIsletmeSilme,} IslemSirasi;
+    /*!
+    \class IslemDeposu::fb
+    \brief Islem sirasi ÖNEMLİ, islem listesine append ederken islem sirasi enum
+            sirasi ile aynı olmak zorunda!!'^!!'!'!!!'
 
+                       */
     //0 dan başlayarak yazdığın kelimeler typedef gibi sayılar verir
 
     QAction* getAction(IslemSirasi x);
