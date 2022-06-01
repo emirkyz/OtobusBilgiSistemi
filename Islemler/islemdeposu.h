@@ -14,7 +14,7 @@ public:
     typedef enum {IslemIsletmeGiris=0, IslemOtobusGiris,
                    IslemSeferGiris, IslemKuralGiris, IslemSeyehatGiris,
                    IslemSoforGiris, IslemYolcuGiris, IslemBiletGiris,
-                   IslemIsletmeListe, IslemOtobusListe,IslemYolcuListe,IslemIsletmeSilme,} IslemSirasi;
+                   IslemIsletmeListe, IslemOtobusListe,IslemYolcuListe,IslemSeferListe,IslemIsletmeSilme,} IslemSirasi;
     /*!
     \class IslemDeposu::fb
     \brief Islem sirasi ÖNEMLİ, islem listesine append ederken islem sirasi enum

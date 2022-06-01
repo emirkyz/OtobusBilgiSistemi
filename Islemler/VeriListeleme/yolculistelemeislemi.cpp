@@ -16,7 +16,7 @@ QAction *YolcuListelemeIslemi::islem()
     return _islem;
 }
 
-void YolcuListelemeIslemi::qMain()
+void YolcuListelemeIslemi::main()
 {
     auto veri = Data::d1().yolcular().tumunuBul([](std::shared_ptr<Yolcubilgileri>){
         return true;

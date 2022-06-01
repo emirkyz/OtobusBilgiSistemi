@@ -16,7 +16,7 @@ QAction *IsletmeListesiIslemi::islem()
     return _islem;
 }
 
-void IsletmeListesiIslemi::qMain()
+void IsletmeListesiIslemi::main()
 {
     auto veri = Data::d1().isletmeler().tumunuBul([](std::shared_ptr<IsletmeBilgileri>){
         return true;

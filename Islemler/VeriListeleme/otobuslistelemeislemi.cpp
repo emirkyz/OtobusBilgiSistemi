@@ -16,7 +16,7 @@ QAction *OtobusListelemeIslemi::islem()
     return _islem;
 }
 
-void OtobusListelemeIslemi::qMain()
+void OtobusListelemeIslemi::main()
 {
     auto veri = Data::d1().otobusler().tumunuBul([](std::shared_ptr<OtobusBilgileri>){
         return true;
