@@ -9,7 +9,7 @@ IsletmeSilmeIslemi::IsletmeSilmeIslemi(QObject *parent)
 }
 
 
-void IsletmeSilmeIslemi::qMain()
+void IsletmeSilmeIslemi::main()
 {
     auto cevap = QMessageBox::question(nullptr,tr("İşletme Silme Onayı"),tr("%1 İsimli İşletmeyi silmek istediğinizden eminmisiniz?").arg(_veri->IsletmeAdi()));
 
