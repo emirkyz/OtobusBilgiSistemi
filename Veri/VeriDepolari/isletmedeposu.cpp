@@ -13,5 +13,8 @@ QDataStream &operator>>(QDataStream &stream, IsletmeDeposu &veri){
     stream >> veri._sonId;
     stream >> veri._veriler;
     return stream;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7f78d91219ebfbbc0b73569f7f2d25b13014eeb5
 }
