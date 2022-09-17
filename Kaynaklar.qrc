@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/Resimler">
+        <file alias="KabulEt.png">Resimler/accept.png</file>
+        <file alias="IptalEt.png">Resimler/cancel.png</file>
+        <file alias="YeniYolcu.png">Resimler/user.png</file>
+        <file alias="YeniSofor.png">Resimler/user_silhouette.png</file>
+        <file alias="Kaydet.png">Resimler/file_save_as.png</file>
+        <file alias="Sefer.png">Resimler/64_bit.png</file>
+        <file alias="SeyehatKurallari.png">Resimler/book-addresses-error.png</file>
+        <file alias="YeniIsletme.png">Resimler/buildingadd.png</file>
+        <file alias="Iptal.png">Resimler/red.png</file>
+        <file alias="Seyehat.png">Resimler/roadsign.png</file>
+        <file alias="Otobus.png">Resimler/bus.png</file>
+        <file alias="Window.png">Resimler/windowIcon.png</file>
+        <file alias="YeniBilet.png">Resimler/bilet.png</file>
+        <file alias="background.png">Resimler/backgroundv1.png</file>
+        <file alias="busBackground.png">Resimler/bus_backgOLD.png</file>
+    </qresource>
+</RCC>
